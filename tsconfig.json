@@ -1,0 +1,21 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "outDir": "dist",
+    "target": "es6",
+    "sourceMap": true,
+    "declaration": true,
+    "incremental": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": [
+      "dom",
+      "es6",
+      "es7",
+      "es2017"
+    ]
+  }
+}
