@@ -1,5 +1,10 @@
 import { Session } from "./model";
 
+/**
+ * Defines a Storage interface
+ * Allows developers to get, save and delete Session data. If implemented, allow syncing
+ * back to a remote storage.
+ */
 export interface Storage {
   get(): Session;
   save(data: Session): this;
@@ -7,6 +12,10 @@ export interface Storage {
   sync(): Promise<void>;
 }
 
+/**
+ * Defines a BrowserStorage storage implementation
+ * Uses local or session storage and syncs back to Jornada server instance
+ */
 export class BrowserStorage implements Storage {
   private readonly key = "jornada";
   private synced = false;

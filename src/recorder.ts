@@ -3,6 +3,10 @@ import { User, Meta } from "./model";
 import { record } from "rrweb";
 import { eventWithTime } from "rrweb/typings/types";
 
+/**
+ * Defines a Jornada recorder instance
+ * Allows developers to set session data and control the rrweb recorder
+ */
 export class Recorder {
   public user: User = { id: "", name: "", email: "" };
   public meta: Meta = {};
